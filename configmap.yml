@@ -1,0 +1,9 @@
+apiVersion: v1 
+kind: ConfigMap
+metadata:
+  name: librarymgmt-dbcreation-script
+data:
+  mysql_usermgmt.sql: |
+    DROP DATABASE IF EXISTS librarydb;
+    CREATE DATABASE librarydb;
+#this config map you can compare the same as user data. 
